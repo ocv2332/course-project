@@ -1,0 +1,6 @@
+requests==2.27.1
+SQLAlchemy==1.4.36
+lxml==4.8.0
+pandas==1.4.2
+numpy==1.22.3
+PyQt5==5.15.6

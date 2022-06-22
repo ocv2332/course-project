@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RecoveryWindow</class>
+ <widget class="QMainWindow" name="RecoveryWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>212</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>823</width>
+    <height>212</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>823</width>
+    <height>212</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget[objectName=&quot;recovery_email&quot;],
+QWidget[objectName=&quot;recovery_code&quot;] { background-color: #f6f7fb }
+
+QPushButton {
+	color: white;
+	font-size: 12px;
+	font-family: 'SESans',Arial,sans-serif;;	
+	border: 1px solid #3f5cde; 
+	background-color: #3f5cde;
+	border-radius: 10px;
+}
+
+QPushButton:hover,
+QPushButton:pressed {
+	border: 0px;
+	background-color: #243581; 
+}
+
+QLineEdit {
+	border: 1px solid #e7e7e7;
+	backgorund-color: #fbfbfb;
+	border-radius: 15px;
+	font-family: Montserrat Medium;
+	font-size: 16px;
+	padding-left: 1em;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>823</width>
+     <height>212</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>823</width>
+     <height>212</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="recovery_email">
+     <widget class="QLineEdit" name="email_input">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>e-mail</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="email_apply">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>170</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	font-size: 12px;
+	font-family: 'SESans',Arial,sans-serif;;	
+	border: 1px solid #3f5cde; 
+	background-color: #3f5cde;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	border: 0px;
+	background-color: #243581;	
+}
+
+QPushButton:pressed {
+	border: 0px;
+	background-color: #243581; 
+}</string>
+      </property>
+      <property name="text">
+       <string>Применить</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>821</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="email_title">
+         <property name="font">
+          <font>
+           <family>Bahnschrift Light</family>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Восстановление доступа</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>821</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="email_subtitle">
+         <property name="font">
+          <font>
+           <family>Bahnschrift Light</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Восстановление доступа возможно при наличии электронной почты в базе данных.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recovery_code">
+     <widget class="QLineEdit" name="code_input">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit[objectName=&quot;email_system&quot;] {
+	border: 1px solid #e7e7e7;
+	backgorund-color: #fbfbfb;
+	border-radius: 15px;
+	font-family: Montserrat Medium;
+	font-size: 16px;
+	padding-left: 1em;
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>Код</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="code_apply">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>170</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	font-size: 12px;
+	font-family: 'SESans',Arial,sans-serif;;	
+	border: 1px solid #3f5cde; 
+	background-color: #3f5cde;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	border: 0px;
+	background-color: #243581;	
+}
+
+QPushButton:pressed {
+	border: 0px;
+	background-color: #243581; 
+}</string>
+      </property>
+      <property name="text">
+       <string>Применить</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>821</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="code_title">
+         <property name="font">
+          <font>
+           <family>Bahnschrift Light</family>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Восстановление доступа</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>821</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="code_subtitle">
+         <property name="font">
+          <font>
+           <family>Bahnschrift Light</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>На почту отправлен код восстановления доступа, введите его в течение 10 минут.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
